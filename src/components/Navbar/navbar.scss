@@ -1,0 +1,13 @@
+@use '../../scss/' as *;
+#navsec {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #navsec01sx {
+        img {
+            height: 50px;
+
+        }
+    }
+}

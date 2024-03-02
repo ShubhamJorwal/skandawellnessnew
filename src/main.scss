@@ -1,0 +1,23 @@
+@use "./scss/" as *;
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // background: $primary02;
+  font-family: $font-family;
+  // color: $white;
+
+  @include mobile {
+    // display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
