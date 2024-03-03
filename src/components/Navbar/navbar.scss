@@ -1,13 +1,79 @@
-@use '../../scss/' as *;
+@use "../../scss/" as *;
 #navsec {
-    height: 60px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+  background: #faf3ed;
+  nav {
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1200px;
+    margin: auto;
     #navsec01sx {
-        img {
-            height: 50px;
-
-        }
+      flex-basis: 20%;
+      img {
+        height: 70px;
+        padding: 5px;
+        background: rgb(255, 255, 255);
+        border-radius: 150px;
+      }
     }
+    #navsec02sx {
+      ul {
+        display: flex;
+        gap: 25px;
+        li {
+          list-style: none;
+          a {
+            font-size: 15px;
+            font-weight: 500;
+            &:hover {
+                border-bottom: 1px solid gray;
+            }
+          }
+        }
+        #buttonnavbapt {
+          a {
+            background: #FF512F;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+            border-radius: 25px 0 25px 0;
+            color: white;
+            padding: 10px 20px;
+
+            font-size: 15px;
+            font-weight: 500;
+            transition: .3s all;
+            &:hover {
+                transform: scale(1.05);
+                border-radius:  0 25px  0 25px;
+                padding: 10px 25px;
+                background: #FF512F;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to left, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                
+            }
+          }
+        }
+      }
+    }
+    #navsec03sx {
+      flex-basis: 20%;
+      display: flex;
+      gap: 30px;
+      justify-content: flex-end;
+      display: none;
+      li {
+        list-style: none;
+        a {
+          font-weight: 500;
+        }
+      }
+    }
+  }
 }
