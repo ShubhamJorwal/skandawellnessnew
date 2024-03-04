@@ -2,6 +2,9 @@
 
 #coverhideareofnavbar {
   height: 75px;
+  @include mobile {
+    height: 65px;
+  }
 }
 #navsec {
   position: fixed;
@@ -12,6 +15,8 @@
   transition: .3s all;
   background: #ffffff;
   z-index: 1111 !important;
+  @include mobile {
+  }
 
   nav {
     height: 80px;
@@ -20,6 +25,9 @@
     align-items: center;
     width: 1200px;
     margin: auto;
+    @include mobile {
+      height: 65px;
+    }
 
     #navsec01sx {
       flex-basis: 20%;
@@ -31,7 +39,76 @@
       }
     }
 
+    .sidebarxmenun {
+      display: none;
+      @include mobile {
+        display: flex;
+      }
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      transition: left 0.3s ease;
+    }
+    
+    .sidebarxmenun.open {
+      left: 0;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        li {
+          font-size: 30px;
+          font-family: $font-family04;
+        }
+      }
+    }
+    
+    .toggle-btnx1s {
+      position: absolute;
+      right: 30px;
+      background: transparent;
+      border: none;
+      font-size: 30px;
+      display: none;
+      @include mobile {
+        display: block;
+      }
+    }
+    
+    .toggle-btn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background: transparent;
+      border: none;
+      font-size: 30px;
+      display: none;
+      @include mobile {
+        display: block;
+      }
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    li {
+      padding: 10px;
+      color: #fff;
+    }
+
+
     #navsec02sx {
+      @include mobile {
+        display: none;
+      }
       ul {
         display: flex;
         gap: 25px;

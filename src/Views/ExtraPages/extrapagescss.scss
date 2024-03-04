@@ -18,6 +18,12 @@
         gap: 10px;
         position: relative;
 
+        @include mobile {
+            border-radius: 0 0 0px 0px;
+
+            min-height: 400px;
+        }
+
         h1 {
             color: $white;
             font-weight: 300;
@@ -26,6 +32,11 @@
             margin-top: 60px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             text-align: center;
+
+            @include mobile {
+                font-size: 60px;
+                margin-top: 0px;
+            }
         }
 
         h3 {
@@ -55,11 +66,20 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 60px;
-
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0px;
+            
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
         .conts654s {
             display: flex;
             flex-direction: column;
             gap: 10px;
+
 
             p {
                 font-size: 16px;
@@ -71,6 +91,8 @@
                 font-family: $font-family04;
                 font-size: 40px;
                 font-weight: 300;
+
+
 
                 span {
                     color: #9a563a;
@@ -157,12 +179,19 @@
             iframe {
                 border: none;
                 border-radius: 20px;
+                @include mobile {
+                    width: 100%;
+                }
             }
 
             p {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                @include mobile {
+                    flex-direction: column;
+                    gap: 10px;
+                }
             }
 
             h2 {
@@ -173,7 +202,10 @@
                 font-size: 35px;
                 color: $black;
                 letter-spacing: .1rem;
-
+                @include mobile {
+                    text-align: center;
+                    justify-content: center;
+                }
                 &:hover {
 
                     color: #9a573a;
@@ -209,6 +241,12 @@
         gap: 10px;
         position: relative;
 
+        @include mobile {
+            border-radius: 0 0 0px 0px;
+            min-height: 400px;
+
+        }
+
         h1 {
             color: $white;
             font-weight: 300;
@@ -217,6 +255,11 @@
             margin-top: 60px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             text-align: center;
+
+            @include mobile {
+                font-size: 60px;
+                margin-top: 0px;
+            }
         }
 
         h3 {
@@ -264,7 +307,14 @@
     margin-top: 60px;
     gap: 60px;
     position: relative;
-
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        
+        width: 100%;
+        text-align: center;
+    }
     .conts654s {
         display: flex;
         flex-direction: column;
@@ -286,6 +336,11 @@
             font-size: 16px;
             line-height: 30px;
             width: 600px;
+
+            @include mobile {
+                width: 100%;
+            }
+
         }
 
         h1 {
@@ -306,6 +361,11 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 15px;
                 margin-top: 10px;
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                }
 
                 input {
                     border: none;
@@ -358,6 +418,9 @@
                     margin-top: 10px;
                     cursor: pointer;
 
+                    @include mobile {
+                        margin-left: unset;
+                    }
                     &:hover {
                         outline: none;
                         transform: scale(1.054);
@@ -402,6 +465,12 @@
         gap: 10px;
         position: relative;
 
+        @include mobile {
+            min-height: 400px;
+            border-radius: 0 0 0px 0px;
+
+        }
+
         h1 {
             color: $white;
             font-weight: 300;
@@ -410,6 +479,11 @@
             margin-top: 60px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             text-align: center;
+
+            @include mobile {
+                font-size: 60px;
+                margin-top: 0px;
+            }
         }
 
         h3 {
@@ -457,6 +531,13 @@
         gap: 60px;
         position: relative;
 
+        @include mobile {
+            width: 100%;
+            margin-top: 0px;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
         .conts654s {
             display: flex;
             flex-direction: column;
@@ -478,6 +559,10 @@
                 font-size: 16px;
                 line-height: 30px;
                 width: 600px;
+
+                @include mobile {
+                    width: 100%;
+                }
             }
 
             h1 {
@@ -501,13 +586,23 @@
         flex-direction: column;
         gap: 12px;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 40px;
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
         h1 {
             color: $black;
             font-weight: 300;
             font-size: 40px;
             font-family: $font-family04;
+
+            @include mobile {
+                font-size: 30px;
+                text-align: center;
+            }
         }
 
 
@@ -524,6 +619,10 @@
                 object-fit: contain;
                 object-fit: cover;
                 transition: .3s all;
+
+                @include mobile {
+                }
+
                 &:hover {
                     transform: scale(0.98);
                 }
@@ -531,6 +630,8 @@
 
             p {
                 font-size: 20px;
+                padding: 0 0 0 20px;
+                background-color: rgb(248, 248, 248);
             }
         }
     }
@@ -564,11 +665,12 @@
         position: absolute;
         width: 150px;
     }
+
     #homslx3ighsidx2s {
         top: 0;
         right: 0;
         position: absolute;
-        width: fit-content ;
+        width: fit-content;
     }
 
     .Contactus-banner-slider {
@@ -586,6 +688,12 @@
         gap: 20px;
         position: relative;
 
+        @include mobile {
+            border-radius: 0 0 0px 0px;
+            min-height: 400px;
+
+        }
+
         h1 {
             color: $white;
             font-weight: 300;
@@ -594,6 +702,11 @@
             margin-top: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             text-align: center;
+
+            @include mobile {
+                font-size: 60px;
+                margin-top: 0px;
+            }
         }
 
         h3 {
@@ -611,6 +724,11 @@
             font-family: $font-family04;
             text-align: center;
             width: 600px;
+
+            @include mobile {
+                width: 100%;
+            }
+
             line-height: 30px;
         }
 
@@ -641,6 +759,12 @@
         gap: 60px;
         position: relative;
 
+        @include mobile {
+            width: 100%;
+            margin-top: 0px;
+
+        }
+
         .conts654s {
             display: flex;
             flex-direction: column;
@@ -662,6 +786,11 @@
                 font-size: 16px;
                 line-height: 30px;
                 width: 600px;
+
+                @include mobile {
+                    width: 100%;
+                    text-align: center;
+                }
             }
 
             h1 {
@@ -669,43 +798,54 @@
                 font-size: 40px;
                 font-weight: 300;
 
+                @include mobile {
+                    text-align: center;
+                    flex-direction: column;
+                    display: flex;
+                }
+
                 span {
                     color: #9a563a;
                 }
             }
         }
-        }
+    }
 
 
-        #aboutcompo04sec01 {
+    #aboutcompo04sec01 {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        justify-content: center;
+        align-items: center;
+        z-index: 111;
+
+        .top4s01x1 {
             display: flex;
             flex-direction: column;
-            gap: 80px;
-            justify-content: center;
             align-items: center;
-            z-index: 111;
-    
-            .top4s01x1 {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                width: fit-content;
-    
-                p {
-                    font-size: 20px;
-                }
-    
-                h1 {
-                    font-family: $font-family04;
-                    font-size: 40px;
-                    font-weight: 300;
-                }
-    
-                img {
-                    width: 70%;
-                    margin: auto;
-                }
+            gap: 10px;
+            width: fit-content;
+
+            @include mobile {
+                text-align: center;
             }
+
+
+            p {
+                font-size: 20px;
             }
+
+            h1 {
+                font-family: $font-family04;
+                font-size: 40px;
+                font-weight: 300;
+            }
+
+            img {
+                width: 70%;
+                margin: auto;
+            }
+        }
+    }
 }

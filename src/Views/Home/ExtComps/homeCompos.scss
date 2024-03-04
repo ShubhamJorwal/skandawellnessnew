@@ -5,6 +5,11 @@
     grid-template-columns: repeat(4, 1fr);
     overflow: hidden;
 
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
     .compo01c1 {
         display: flex;
         flex-direction: column;
@@ -77,11 +82,20 @@
     display: flex;
     align-items: center;
 
+    @include mobile {
+        background-image: none;
+        min-height: unset;
+    }
+
     img {
         position: absolute;
         height: 100%;
         opacity: .03;
         padding: 80px;
+        @include mobile {
+            object-fit: contain;
+            width: 100%;
+        }
     }
 
     #compo02chilx1 {
@@ -93,6 +107,11 @@
         width: 50%;
         padding: 80px 10px 80px 40px;
         align-items: center;
+        @include mobile {
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+        }
 
         p {
             width: 300px;
@@ -115,6 +134,11 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 10px;
                 column-gap: 20px;
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
 
                 li {
                     list-style: none;
@@ -135,12 +159,19 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    @include mobile {
+        padding: 40px 10px;
+    }
 
     #compo03s1x5s {
         position: absolute;
         bottom: 0;
         right: 0;
         width: 240px;
+        @include mobile {
+            width: 100px;
+        
+        }
     }
 
     h1 {
@@ -150,6 +181,10 @@
         color: #f5e4d4;
         width: 1200px;
         margin: 0 auto;
+        @include mobile {
+            font-size: 80px;
+            width: 100%;
+        }
     }
 
     .contcomchs1 {
@@ -159,6 +194,13 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         align-items: center;
+
+        @include mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        }
 
         #contchsx23s {
             padding: 10px;
@@ -227,6 +269,9 @@
         height: 400px;
         animation: jumpping 4s infinite linear;
         bottom: 400px;
+        @include mobile {
+            height: 200px;
+        }
     }
 
     #curblefpnslx {
@@ -235,7 +280,10 @@
         position: absolute;
         left: -70px;
         bottom: 400px;
-
+        @include mobile {
+            height: 200px;
+            bottom: 600px;
+        }
         .curb-shape1 {
             clip-path: path("M 41 63.997 C 41 63.997 329.963 -55.313 388 32.998 C 409.037 70.308 447.963 105.687 549 150.998 C 610.037 178.308 670.963 244.686 539 308.998 C 487.037 333.308 447.963 369.687 428 416.997 C 408.037 464.308 320.963 561.687 158 607.998 C 98.037 623.309 21 643.687 1 507.997 C -7.963 417.308 84.963 195.686 39 68.998");
             width: 618px;
@@ -244,6 +292,9 @@
             background-color: rgba(252, 222, 204, 0.35);
             z-index: 1;
             position: relative;
+            @include mobile {
+                zoom: 40%;
+            }
         }
     }
 
@@ -251,7 +302,12 @@
     flex-direction: column;
     gap: 120px;
     align-items: center;
-    padding: 100px 40px;
+    padding: 100px 10px;
+    @include mobile {
+        padding: 40px 10px;
+        
+        gap: 80px;
+    }
 
     #compo04sec01 {
         display: flex;
@@ -260,13 +316,19 @@
         justify-content: center;
         align-items: center;
         z-index: 111;
-
+        @include mobile {
+            gap: 40px;
+        }
+    
         .top4s01x1 {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 10px;
             width: fit-content;
+            @include mobile {
+                text-align: center;
+            }
 
             p {
                 font-size: 20px;
@@ -291,6 +353,11 @@
             margin: auto;
             gap: 20px;
             width: 1200px;
+            @include mobile {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+            }
 
             .threebox01x2 {
                 background: #f2f2f2;
@@ -384,6 +451,13 @@
         width: 1200px;
         margin: 0 auto;
 
+        @include mobile {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            margin-top: 40px;
+        }
+
         .twosecpo04sx23 {
             position: relative;
 
@@ -396,6 +470,11 @@
                 margin: 0 40px 40px 40px;
                 height: -webkit-fill-available;
                 object-fit: cover;
+                @include mobile {
+                    width: 94%;
+                    margin: 0;
+                    left: 3%;
+                }
             }
 
             #newsecwithtextsk {
@@ -415,6 +494,10 @@
                     animation: jumpping 4s infinite linear;
                     z-index: 11;
                     margin-left: -70px;
+                    @include mobile {
+                        width: 80px;
+                        margin-left: -10px;
+                    }
                 }
 
                 h1 {
@@ -428,6 +511,10 @@
         .twosecpo04sx23s5 {
             #sec01cpox23 {
                 margin-left: -60px;
+                @include mobile {
+                    text-align: center;
+                    margin-left: 0px;
+                }
 
                 p {
                     font-size: 20px;
@@ -439,6 +526,11 @@
                     font-family: $font-family04;
                     font-size: 60px;
                     font-weight: 300;
+                    @include mobile {
+                        font-size: 40px;
+                        width: calc(100% - 100px);
+                        margin: auto;
+                    }
 
                     span {
                         color: #9a563a;
@@ -451,7 +543,10 @@
                 display: flex;
                 flex-direction: column;
                 gap: 40px;
-
+@include mobile {
+    
+    padding: 20px;
+}
                 #xpix24xs1 {
                     background-image: linear-gradient(120deg, rgb(253, 230, 216) 0%, rgb(254, 254, 254) 70%);
                     margin-left: 10px;

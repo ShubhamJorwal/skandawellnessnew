@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
+import { CiMenuFries } from "react-icons/ci";
+import { RxCross2 } from "react-icons/rx";
+
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -48,6 +51,13 @@ const Navbar = () => {
       document.removeEventListener("scroll", handleScroll);
     };
   }, [scrolled]);
+
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
           <LoadingBar
@@ -62,6 +72,33 @@ const Navbar = () => {
           <div id="navsec01sx">
             <Link to={"/"}><img src="/logo.png" alt="" /></Link>
           </div>
+          <button className="toggle-btnx1s" onClick={toggleSidebar}><CiMenuFries /></button>
+          <div className={`sidebarxmenun ${isOpen ? 'open' : ''}`}>
+      <button className="toggle-btn" onClick={toggleSidebar}><RxCross2 /></button>
+      <ul>
+              <li>
+                <Link to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link to={"/services"}>Services</Link>
+              </li>
+              <li>
+                <Link to={"/about-us"}>About Us</Link>
+              </li>
+              <li>
+                <Link to={"/blogs"}>Blogs</Link>
+              </li>
+              <li>
+                <Link to={"/career"}>Career</Link>
+              </li>
+              <li>
+              <Link to={"/contact-us"}>Contact</Link>
+            </li>
+            <li id="buttonnavbapt">
+              <Link to={"/"}>Book Appointment</Link>
+            </li>
+            </ul>
+    </div>
           <div id="navsec02sx">
             <ul>
               <li>

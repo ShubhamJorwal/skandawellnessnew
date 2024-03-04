@@ -14,6 +14,9 @@
     align-items: center;
     gap: 20px;
     flex-direction: column;
+    @include mobile {
+        padding: 20px;
+    }
 
     h1 {
         font-family: $font-family04;
@@ -173,6 +176,10 @@
             gap: 10px;
             max-width: 1270px;
             margin: auto;
+            @include mobile {
+                flex-direction: column-reverse;
+                gap: 40px;
+            }
 
             .threesegmentscoverds5 {
                 display: flex;
@@ -184,6 +191,10 @@
                 align-items: center;
                 gap: 10px;
                 justify-content: space-between;
+                @include mobile {
+                    flex-direction: column;
+                    gap: 20px;
+                }
                 span {
                     width: calc(100% - 110px);
                     display: flex;
@@ -193,11 +204,17 @@
                         font-family: $font-family04;
                         font-weight: 300;
                         font-size: 28px;
-                        text-align: right;
+                        text-align: right;       @include mobile {
+                            
+                            text-align: center;
+                                }
                     }
                     p {
                         line-height: 28px;
-                        text-align: right;
+                        text-align: right;       @include mobile {
+                            
+                            text-align: center;
+                                }
                     }
                 }
             }
@@ -207,6 +224,10 @@
                 gap: 10px;
                 justify-content: space-between;
                 flex-direction: row-reverse;
+                @include mobile {
+                    flex-direction: column;
+                    gap: 20px;
+                }
                 span {
                     width: calc(100% - 110px);
                     display: flex;
@@ -217,10 +238,18 @@
                         font-weight: 300;
                         font-size: 28px;
                         text-align: left;
+                        @include mobile {
+                            
+                    text-align: center;
+                        }
                     }
                     p {
                         line-height: 28px;
                         text-align: left;
+                        @include mobile {
+                            
+                    text-align: center;
+                        }
                     }
                 }
             }
@@ -242,6 +271,9 @@
                     height: 500px;
                     margin: 0 40px;
                 }
+                @include mobile {
+                    display: none;
+                }
             }
 
             #thgntscds5x3 {
@@ -261,6 +293,10 @@
                 border-radius: 0 200px 200px 0;
                 background-image: linear-gradient(var(--gradient-direction, to right), rgb(254, 254, 254) 0%, rgb(253, 230, 216) 100%);
                 z-index: -1;
+                @include mobile {
+                    border-radius: 0 00px 00px 0;
+                    padding-bottom: 40px;
+                }
             }
 
             &::after {
@@ -274,6 +310,10 @@
                 background-image: linear-gradient(var(--gradient-direction, to right), rgb(254, 254, 254) 0%, rgb(253, 230, 216) 100%);
                 z-index: -1;
                 transform: scaleX(-1);
+                @include mobile {
+                    border-radius: 0 00px 00px 0;
+                    padding-bottom: 40px;
+                }
             }
         }
     }

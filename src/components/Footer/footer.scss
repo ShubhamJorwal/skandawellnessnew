@@ -13,12 +13,19 @@
     width: 150px;
     position: absolute;
     right: 10px;
+
+    @include mobile {
+      width: 70px;
+    }
   }
 
   #redflowersrighsidx2 {
     width: 150px;
     position: absolute;
     left: 10px;
+    @include mobile {
+      display: none;
+    }
   }
 
   #footsecparentx1 {
@@ -43,6 +50,12 @@
     gap: 20px;
     max-width: 1200px;
     margin: auto;
+    
+    @include mobile {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
 
     .footsec01,
     .footsec02,
@@ -52,6 +65,10 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+      @include mobile {
+        width: 100%;
+        align-items: center;
+      }
       h3 {
         font-family: $font-family04;
         font-weight: 500;
@@ -113,6 +130,9 @@
             flex-direction: row;
             gap: 10px;
             margin-top: 14px;
+            @include mobile {
+              justify-content: center;
+            }
             li {
               a {
                 &:hover {

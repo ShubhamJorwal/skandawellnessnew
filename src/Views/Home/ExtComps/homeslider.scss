@@ -9,6 +9,11 @@
   background-size: cover;
   background-position: center;
   border-radius: 0 0 200px 200px;
+  @include mobile {
+    border-radius: 0 0 0px 0px;
+    min-height: 400px;
+
+  }
 //   background: -moz-linear-gradient(
 //     45deg,
 //     #fff5d7 0%,
@@ -52,6 +57,10 @@ gap: 10px;
     margin-top: 60px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
+    @include mobile {
+      font-size: 60px;
+      margin-top: 0px;
+    }
   }
   h3 {
     color: $white;
@@ -227,6 +236,9 @@ gap: 10px;
   bottom: 0;
   overflow: hidden;
   animation: slideFromLeft 1s forwards; 
+  @include mobile {
+    width: 60px;
+  }
 }
 
 #homslx3ighsid {
@@ -238,6 +250,9 @@ gap: 10px;
   transform: scaleX(-1);
 
   animation: slideFromRight 1s forwards; 
+  @include mobile {
+    width: 60px;
+  }
 }
 
 #homslx2ighsid {
