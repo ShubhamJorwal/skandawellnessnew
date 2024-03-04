@@ -1,0 +1,517 @@
+@use '../../scss/' as *;
+
+#contactuspage {
+    overflow: hidden;
+    padding-bottom: 60px;
+
+    .Contactus-banner-slider {
+        height: 60vh;
+        background-image: url(/assets/contactUspagebanner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0 0 200px 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+
+        h1 {
+            color: $white;
+            font-weight: 300;
+            font-size: 80px;
+            font-family: $font-family04;
+            margin-top: 60px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        h3 {
+            color: $white;
+            font-weight: 300;
+            font-size: 35px;
+            font-family: $font-family04;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        p {
+            color: $white;
+            font-weight: 300;
+            font-size: 20px;
+            font-family: $font-family04;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+
+    #contax125s32 {
+        padding: 80px 0px;
+        width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+
+        .conts654s {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+                font-size: 16px;
+                line-height: 30px;
+
+            }
+
+            h1 {
+                font-family: $font-family04;
+                font-size: 40px;
+                font-weight: 300;
+
+                span {
+                    color: #9a563a;
+                }
+            }
+
+            form {
+                .con654s1x1 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    input {
+                        border: none;
+                        font-size: 16px;
+                        font-family: $font-family;
+                        padding: 15px;
+                        background: #faf3ed;
+                        border-radius: 10px;
+                        width: 100%;
+                        transition: .3s all;
+
+                        &:focus-visible {
+                            outline: none;
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    textarea {
+                        border: none;
+                        font-size: 16px;
+                        font-family: $font-family;
+                        padding: 15px;
+                        background: #faf3ed;
+                        border-radius: 10px;
+                        width: 100%;
+                        transition: .3s all;
+
+                        &:focus-visible {
+                            outline: none;
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    button {
+                        width: fit-content;
+                        padding: 10px;
+                        border-radius: 10px;
+                        border: none;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        font-family: $font-family;
+                        width: 250px;
+                        background: #FF512F;
+                        background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+                        background: linear-gradient(to right, #F09819, #FF512F);
+                        color: $white;
+                        transition: .3s all;
+                        margin-top: 10px;
+                        cursor: pointer;
+
+                        &:hover {
+                            outline: none;
+                            width: 300px;
+                            background: #FF512F;
+                            background: -webkit-linear-gradient(to left, #F09819, #FF512F);
+                            background: linear-gradient(to left, #F09819, #FF512F);
+                        }
+                    }
+                }
+            }
+        }
+
+        .conts654sx23 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            hr {
+                border-color: #9a573a28;
+                height: 1px;
+            }
+
+            iframe {
+                border: none;
+                border-radius: 20px;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            h2 {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-family: $font-family04;
+                font-size: 35px;
+                color: $black;
+                letter-spacing: .1rem;
+
+                &:hover {
+
+                    color: #9a573a;
+                }
+
+                svg {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+// career page
+
+
+#Careerpage {
+    overflow: hidden;
+    padding-bottom: 60px;
+
+    .Contactus-banner-slider {
+        height: 60vh;
+        background-image: url(/assets/careerpageban.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0 0 200px 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+
+        h1 {
+            color: $white;
+            font-weight: 300;
+            font-size: 80px;
+            font-family: $font-family04;
+            margin-top: 60px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        h3 {
+            color: $white;
+            font-weight: 300;
+            font-size: 35px;
+            font-family: $font-family04;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        p {
+            color: $white;
+            font-weight: 300;
+            font-size: 20px;
+            font-family: $font-family04;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            line-height: 30px;
+        }
+
+        a {
+            background: $black;
+            color: $white;
+            padding: 10px 20px;
+            border-radius: 150px;
+            transition: .3s all;
+
+            &:hover {
+                background: #FF512F;
+                background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+                background: linear-gradient(to left, #F09819, #FF512F);
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+#con654s1x1x21s25 {
+    padding: 80px 0px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 60px;
+    position: relative;
+
+    .conts654s {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+
+        #imgcarlogskxs {
+            position: absolute;
+            top: -20px;
+            left: -100px;
+            width: 250px;
+            margin-block-start: auto;
+            opacity: .05;
+            z-index: -1;
+
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            width: 600px;
+        }
+
+        h1 {
+            font-family: $font-family04;
+            font-size: 40px;
+            font-weight: 300;
+
+            span {
+                color: #9a563a;
+            }
+        }
+
+        form {
+            width: 100%;
+
+            .con654s1x1 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                margin-top: 10px;
+
+                input {
+                    border: none;
+                    font-size: 16px;
+                    font-family: $font-family;
+                    padding: 15px;
+                    background: #faf3ed;
+                    border-radius: 10px;
+                    width: 100%;
+                    transition: .3s all;
+
+                    &:focus-visible {
+                        outline: none;
+                        transform: scale(1.02);
+                    }
+                }
+
+                textarea {
+                    border: none;
+                    font-size: 16px;
+                    font-family: $font-family;
+                    padding: 15px;
+                    background: #faf3ed;
+                    border-radius: 10px;
+                    width: 100%;
+                    transition: .3s all;
+
+                    &:focus-visible {
+                        outline: none;
+                        transform: scale(1.02);
+                    }
+                }
+
+                button {
+                    width: fit-content;
+                    padding: 10px;
+                    border-radius: 10px;
+                    border: none;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    font-family: $font-family;
+                    // width: 250px;
+                    width: 100%;
+                    margin-left: 50%;
+                    background: #FF512F;
+                    background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+                    background: linear-gradient(to right, #F09819, #FF512F);
+                    color: $white;
+                    transition: .3s all;
+                    margin-top: 10px;
+                    cursor: pointer;
+
+                    &:hover {
+                        outline: none;
+                        transform: scale(1.054);
+                        background: #FF512F;
+                        background: -webkit-linear-gradient(to left, #F09819, #FF512F);
+                        background: linear-gradient(to left, #F09819, #FF512F);
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+// blogs page
+
+#BlogsPage {
+    overflow: hidden;
+    padding-bottom: 60px;
+
+    .Contactus-banner-slider {
+        height: 60vh;
+        background-image: url(/assets/blogsbanner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0 0 200px 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+
+        h1 {
+            color: $white;
+            font-weight: 300;
+            font-size: 80px;
+            font-family: $font-family04;
+            margin-top: 60px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        h3 {
+            color: $white;
+            font-weight: 300;
+            font-size: 35px;
+            font-family: $font-family04;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        p {
+            color: $white;
+            font-weight: 300;
+            font-size: 20px;
+            font-family: $font-family04;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            line-height: 30px;
+        }
+
+        a {
+            background: $black;
+            color: $white;
+            padding: 10px 20px;
+            border-radius: 150px;
+            transition: .3s all;
+
+            &:hover {
+                background: #FF512F;
+                background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+                background: linear-gradient(to left, #F09819, #FF512F);
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    #BlogsContent {
+        padding: 80px 0px 20px 0;
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        gap: 60px;
+        position: relative;
+
+        .conts654s {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+
+            #imgcarlogskxs {
+                position: absolute;
+                top: -20px;
+                left: -100px;
+                width: 250px;
+                margin-block-start: auto;
+                opacity: .05;
+                z-index: -1;
+
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 30px;
+                width: 600px;
+            }
+
+            h1 {
+                font-family: $font-family04;
+                font-size: 40px;
+                font-weight: 300;
+
+                span {
+                    color: #9a563a;
+                }
+            }
+        }
+    }
+
+
+
+    #BlogsContentx25s {
+        width: 1200px;
+        margin: auto;
+        h1 {
+            color: $black;
+            font-weight: 300;
+            font-size: 80px;
+            font-family: $font-family04;
+        }
+
+
+        p {
+            color: $white;
+            font-weight: 300;
+            font-size: 20px;
+            font-family: $font-family04;
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+}
