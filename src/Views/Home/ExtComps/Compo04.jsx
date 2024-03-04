@@ -7,7 +7,7 @@ const Compo04 = () => {
         <>
             <div id="compo04">
                 <img src="/assets/bruspancakepencil.webp" id='bruspancakepencil' alt="" />
-                <div id="curblefpnslx" ><div class="curb-shape1"></div></div>
+                <div id="curblefpnslx" ><div className="curb-shape1"></div></div>
 
                 <div id="compo04sec01">
                     <div className="top4s01x1">

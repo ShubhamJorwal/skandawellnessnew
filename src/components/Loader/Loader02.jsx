@@ -4,9 +4,9 @@ const Loader02 = () => {
   return (
     <div id='nerwloader20'>
       <header>
-            <div class="Loader">
-            <div class="text">Loading</div>
-            <div class="dots">
+            <div className="Loader">
+            <div className="text">Loading</div>
+            <div className="dots">
              <div></div>
              <div></div>  
              <div></div>

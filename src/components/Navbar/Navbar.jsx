@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 import { CiMenuFries } from "react-icons/ci";
 import { RxCross2 } from "react-icons/rx";
+import BookAppointments from "../../Views/Services/BookAppointment/BookAppointments";
 
 
 const Navbar = () => {
@@ -57,6 +58,20 @@ const Navbar = () => {
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
+  };
+   
+
+
+
+
+
+
+  // book apt sidebar
+
+  const [isSliderOpen, setIsSliderOpen] = useState(false);
+
+  const toggleSlider = () => {
+    setIsSliderOpen(!isSliderOpen);
   };
   return (
     <>
@@ -120,7 +135,7 @@ const Navbar = () => {
               <Link to={"/contact-us"}>Contact</Link>
             </li>
             <li id="buttonnavbapt">
-              <Link to={"/"}>Book Appointment</Link>
+              <Link onClick={toggleSlider}>Book Appointment</Link>
             </li>
             </ul>
           </div>
@@ -132,6 +147,7 @@ const Navbar = () => {
           </div> */}
         </nav>
       </div>
+      <BookAppointments isOpen={isSliderOpen} onClose={toggleSlider} />
       <div id="coverhideareofnavbar"></div>
     </>
   );

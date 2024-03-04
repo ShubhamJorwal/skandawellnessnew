@@ -9,7 +9,7 @@ const Notfoundpage = () => {
     <div id="notfouncidsdk">
       <h1>404</h1>
 <p>Oops! Something is wrong.</p>
-<a class="button" href="/"><i class="icon-home"></i>Go back</a>
+<a className="button" href="/"><i className="icon-home"></i>Go back</a>
     </div>
   );
 };
