@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    document.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]);
   return (
     <>
-      <div id="navsec">
+      <div id="navsec" className={scrolled ? "scrolledNavbar" : ""}>
         <nav id="">
           <div id="navsec01sx">
             <img src="/logo.png" alt="" />
