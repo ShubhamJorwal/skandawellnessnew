@@ -6,7 +6,7 @@ const Compo04 = () => {
     return (
         <>
             <div id="compo04">
-                <img src="/assets/bruspancakepencil.png" id='bruspancakepencil' alt="" />
+                <img src="/assets/bruspancakepencil.webp" id='bruspancakepencil' alt="" />
                 <div id="curblefpnslx" ><div class="curb-shape1"></div></div>
 
                 <div id="compo04sec01">
@@ -72,9 +72,9 @@ const Compo04 = () => {
                 </div>
                 <div id="compo04sec02">
                     <div className="twosecpo04sx23">
-                        <img id='twosecpo04sx23img' src="https://wordpress.vecurosoft.com/wellnez/wp-content/uploads/2023/03/ab-2-1.jpg" alt="" />
+                        <img id='twosecpo04sx23img' src="/assets/homepagexks235.webp" alt="" />
                         <div id="newsecwithtextsk">
-                            <img id='compo03s1x5s' src="/assets/redrossesbunch.png" alt="" />
+                            <img id='compo03s1x5s' src="/assets/redrossesbunch.webp" alt="" />
                             <h1>Skanda Wellness</h1>
                         </div>
                     </div>

@@ -5,7 +5,7 @@ const Compo02 = () => {
     <>
       
       <div id="compo02">
-            <img src="/assets/newlogoextralarge.png" alt="" />
+            <img src="/assets/newlogoextralarge.webp" alt="" />
         <div id="compo02chilx1">
             <p>Indulge in our rejuvenating services tailored to enhance your natural beauty and restore your inner balance.</p>
             <div id="chilx1s1">

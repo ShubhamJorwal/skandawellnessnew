@@ -33,10 +33,10 @@ const Blogs = () => {
             <Navbar />
             <div id="BlogsPage">
                 <div className="Contactus-banner-slider">
-                    {/**/} <img id='homslx1ighsid' src="/assets/redrossesbunch.png" alt="" />
-                    <img id='homslx2ighsid' src="/assets/redrossesbunch.png" alt="" />
-                    <img id='homslx3ighsid' src="/assets/redrossesbunch.png" alt="" />
-                    <img id='homslx4ighsid' src="/assets/redrossesbunch.png" alt="" />
+                    {/**/} <img id='homslx1ighsid' src="/assets/redrossesbunch.webp" alt="" />
+                    <img id='homslx2ighsid' src="/assets/redrossesbunch.webp" alt="" />
+                    <img id='homslx3ighsid' src="/assets/redrossesbunch.webp" alt="" />
+                    <img id='homslx4ighsid' src="/assets/redrossesbunch.webp" alt="" />
                     <h1>Explore Our Latest Blogs</h1>
                     <h3>Stay Informed, Stay Inspired</h3>
                     <p>Dive into our collection of insightful articles covering wellness <br /> tips, beauty trends, self-care advice, and more.</p>
@@ -47,7 +47,7 @@ const Blogs = () => {
                         <p>Skanda Wellness</p>
                         <h1><span>Explore</span> Our <span>Latest</span> Blogs</h1>
                         <p>Discover inspiration to nurture your mind, body, and soul on your journey to holistic well-being.</p>
-                        <img src="/assets/newlogoextralarge.png" alt="" id='imgcarlogskxs' />
+                        <img src="/assets/newlogoextralarge.webp" alt="" id='imgcarlogskxs' />
                     </div>
                 </div>
 

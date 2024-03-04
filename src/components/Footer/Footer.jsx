@@ -13,7 +13,7 @@ const Footer = () => {
     <>
 
       <footer id='footsec'>
-          <img id='redflowersrighsid' src="/assets/redrossesbunch.png" alt="" />
+          <img id='redflowersrighsid' src="/assets/redrossesbunch.webp" alt="" />
           <img id='redflowersrighsidx2' src="/assets/singleredros.jpg" alt="" />
           <div id="footsecparentx1">
 <img src="/logo.png" alt="" />
@@ -24,17 +24,17 @@ const Footer = () => {
           <div id="footsecparentx2">
           <div className="footsec01">
             <h3>Skanda Wellness</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reiciendis dignissimos aspernatur architecto!</p>
+            <p>Explore wellness with us. Join our community for tips, treatments, and inspiration on your journey to holistic well-being.</p>
             <button>Book an Appointment</button>
           </div>
           <div className="footsec02">
             <h3>Important Links</h3>
             <ul>
-              <li><Link to={"/"}>Book Online</Link></li>
-              <li><Link to={"/"}>Purchase a Gift Certificate</Link></li>
-              <li><Link to={"/"}>Spa Promotions</Link></li>
-              <li><Link to={"/"}>Exclusive Offers & Events</Link></li>
-              <li><Link to={"/"}>Blog and News</Link></li>
+              <li><Link to={"/services"}>Services</Link></li>
+              <li><Link to={"/about-us"}>About Us</Link></li>
+              <li><Link to={"/blogs"}>Blogs</Link></li>
+              <li><Link to={"/career"}>Career</Link></li>
+              <li><Link to={"/contact-us"}>Contact Us</Link></li>
             </ul>
           </div>
           <div className="footsec03">

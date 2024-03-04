@@ -12,9 +12,53 @@ const Compab01 = () => {
 
                 <div id="sectcp01">
                     <div id="newsecx12s1">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit possimus vel illum error recusandae tenetur distinctio eos aperiam odit nostrum dignissimos deleniti praesentium, dolore est in architecto accusamus ratione ea sunt quasi, natus vero dolor dolorem dolores. Perferendis odio hic eligendi, aut modi, asperiores reiciendis sed suscipit soluta exercitationem, minima esse voluptatum. Mollitia, saepe. Sint maxime, officia minus velit provident vitae assumenda mollitia ea eaque in dolorum quo veniam cupiditate similique tenetur error dolore quidem voluptates voluptas. Fugiat officiis, nostrum quis at, ullam, adipisci aspernatur ad quam praesentium quae et nobis dolore alias aliquam neque. Cumque nobis laborum maiores consequuntur! itachi
-                            
-                        </p>
+                        <div className="threesegmentscoverds5" id='thgntscds5x1'>
+                            <div className="secnethsds5">
+                            <span>
+                                <h2>Holistic Approach</h2>
+                                <p>Balancing mind, body, and spirit for overall well-being.</p>
+                            </span>
+                            <div class="vs-icon"><img decoding="async" src="https://wordpress.vecurosoft.com/wellnez/wp-content/uploads/2023/03/sr-i-1-1.png" alt="icon"/></div>
+                            </div>
+                            <div className="secnethsds5">
+                            <span>
+                                <h2>Expert Guidance</h2>
+                                <p>Experienced professionals dedicated to your journey to wellness.</p>
+                            </span>
+                            <div class="vs-icon"><img decoding="async" src="https://wordpress.vecurosoft.com/wellnez/wp-content/uploads/2023/03/sr-i-1-2.png" alt="icon"/></div>
+                            </div>
+                            <div className="secnethsds5">
+                            <span>
+                                <h2>Personalized Care</h2>
+                                <p>Customized strategies for unique health and lifestyle needs.</p>
+                            </span>
+                            <div class="vs-icon"><img decoding="async" src="https://wordpress.vecurosoft.com/wellnez/wp-content/uploads/2023/03/sr-i-1-3.png" alt="icon"/></div>
+                            </div>
+                        </div>
+                        <div className="threesegmentscoverds5" id='thgntscds5x2'><img src="/assets/stonepolepy.webp" alt="" /></div>
+                        <div className="threesegmentscoverds5" id='thgntscds5x3'>
+                        <div className="secnethsds5c2">
+                            <span>
+                                <h2>Holistic Approach</h2>
+                                <p>Balancing mind, body, and spirit for overall well-being.</p>
+                            </span>
+                            <div class="vs-icon"><img decoding="async" src="https://wordpress.vecurosoft.com/wellnez/wp-content/uploads/2023/03/sr-i-1-4.png" alt="icon"/></div>
+                            </div>
+                            <div className="secnethsds5c2">
+                            <span>
+                                <h2>Expert Guidance</h2>
+                                <p>Experienced professionals dedicated to your journey to wellness.</p>
+                            </span>
+                            <div class="vs-icon"><img decoding="async" src="https://wordpress.vecurosoft.com/wellnez/wp-content/uploads/2023/03/sr-i-1-5.png" alt="icon"/></div>
+                            </div>
+                            <div className="secnethsds5c2">
+                            <span>
+                                <h2>Personalized Care</h2>
+                                <p>Customized strategies for unique health and lifestyle needs.</p>
+                            </span>
+                            <div class="vs-icon"><img decoding="async" src="https://wordpress.vecurosoft.com/wellnez/wp-content/uploads/2023/03/sr-i-1-6.png" alt="icon"/></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

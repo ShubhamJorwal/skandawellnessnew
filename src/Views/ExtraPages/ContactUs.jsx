@@ -60,10 +60,10 @@ const ContactUs = () => {
             <Navbar />
             <div id="contactuspage">
                 <div className="Contactus-banner-slider">
-                    {/**/} <img id='homslx1ighsid' src="/assets/redrossesbunch.png" alt="" />
-                    <img id='homslx2ighsid' src="/assets/redrossesbunch.png" alt="" />
-                    <img id='homslx3ighsid' src="/assets/redrossesbunch.png" alt="" />
-                    <img id='homslx4ighsid' src="/assets/redrossesbunch.png" alt="" />
+                    {/**/} <img id='homslx1ighsid' src="/assets/redrossesbunch.webp" alt="" />
+                    <img id='homslx2ighsid' src="/assets/redrossesbunch.webp" alt="" />
+                    <img id='homslx3ighsid' src="/assets/redrossesbunch.webp" alt="" />
+                    <img id='homslx4ighsid' src="/assets/redrossesbunch.webp" alt="" />
                     <h1>Contact Us</h1>
                     <p>Reach out effortlessly. We're here to assist you promptly <br /> with any inquiries or feedback you may have.</p>
                 </div>

@@ -161,9 +161,96 @@
     #sectcp01 {
         position: relative;
 
+        width: 100%;
+        margin-top: 0px;
+
         #newsecx12s1 {
-            min-height: 600px;
+            min-height: 400px;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            max-width: 1270px;
+            margin: auto;
+
+            .threesegmentscoverds5 {
+                display: flex;
+                gap: 30px;
+                flex-direction: column;
+
+                .secnethsds5 {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: space-between;
+                span {
+                    width: calc(100% - 110px);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    h2 {
+                        font-family: $font-family04;
+                        font-weight: 300;
+                        font-size: 28px;
+                        text-align: right;
+                    }
+                    p {
+                        line-height: 28px;
+                        text-align: right;
+                    }
+                }
+            }
+            .secnethsds5c2 {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                span {
+                    width: calc(100% - 110px);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    h2 {
+                        font-family: $font-family04;
+                        font-weight: 300;
+                        font-size: 28px;
+                        text-align: left;
+                    }
+                    p {
+                        line-height: 28px;
+                        text-align: left;
+                    }
+                }
+            }
+            }
+
+            #thgntscds5x1 {
+                flex-basis: 40%;
+                justify-content: flex-start;
+                align-items: center;
+
+            }
+            
+
+            #thgntscds5x2 {
+                justify-content: center;
+                align-items: center;
+                flex-basis: 20%;
+                img {
+                    height: 500px;
+                    margin: 0 40px;
+                }
+            }
+
+            #thgntscds5x3 {
+
+                justify-content: flex-end;
+                align-items: center;
+                flex-basis: 40%;
+            }
+
             &::before {
                 content: "";
                 position: absolute;
@@ -191,3 +278,37 @@
         }
     }
 }
+
+
+
+.vs-icon {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #9a563a;
+    color: $white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    margin: 5px;
+    transition: all ease 0.4s;
+    @include flex(center,center);
+    &:hover {
+        background-color: $black;
+    }
+  }
+  
+  .vs-icon:before {
+    content: "";
+    position: absolute;
+    top: calc(var(--border-gap, 5px) / -1);
+    right: calc(var(--border-gap, 5px) / -1);
+    bottom: calc(var(--border-gap, 5px) / -1);
+    left: calc(var(--border-gap, 5px) / -1);
+    border: 1px dashed #9a563a;
+    border-radius: inherit;
+    transition: all ease 0.4s;
+    animation: spin 30s linear infinite;
+  }
+  

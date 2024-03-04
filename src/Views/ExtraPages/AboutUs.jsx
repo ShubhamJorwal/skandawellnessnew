@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import Compab01 from './AboutComps/Compab01'
 import Compab02 from './AboutComps/Compab02'
+import Compab03 from './AboutComps/Compab03'
 
 const AboutUs = () => {
     return (
@@ -10,10 +11,10 @@ const AboutUs = () => {
             <Navbar />
             <div id="AboutUsPage">
                 <div className="Contactus-banner-slider">
-                    <img id='homslx1ighsid' src="/assets/redrossesbunch.png" alt="" />
-                    <img id='homslx2ighsid' src="/assets/redrossesbunch.png" alt="" />
-                    <img id='homslx3ighsid' src="/assets/redrossesbunch.png" alt="" />
-                    <img id='homslx4ighsid' src="/assets/redrossesbunch.png" alt="" />
+                    <img id='homslx1ighsid' src="/assets/redrossesbunch.webp" alt="" />
+                    <img id='homslx2ighsid' src="/assets/redrossesbunch.webp" alt="" />
+                    <img id='homslx3ighsid' src="/assets/redrossesbunch.webp" alt="" />
+                    <img id='homslx4ighsid' src="/assets/redrossesbunch.webp" alt="" />
                     <h1>Discover Skanda Wellness</h1>
                     <p>Explore our holistic sanctuary, blending traditional wisdom with modern practices, guiding individuals towards balance, vitality, and joy. Join our transformative journey.</p>
                 </div>
@@ -23,12 +24,15 @@ const AboutUs = () => {
                         <p>Skanda Wellness</p>
                         <h1>Our <span>Journey</span> to <span>Holistic</span> Well-being</h1>
                         <p>Journey to balance, vitality, and joy with us.</p>
-                        <img src="/assets/newlogoextralarge.png" alt="" id='imgcarlogskxs' />
+                        <img src="/assets/newlogoextralarge.webp" alt="" id='imgcarlogskxs' />
                     </div>
                 </div>
 
                 <Compab02 />
+                <Compab03 />
                 <Compab01 />
+                <br /><br />
+
 
             </div>
             <Footer />

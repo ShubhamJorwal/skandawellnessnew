@@ -5,6 +5,7 @@ import ContactUs from "../Views/ExtraPages/ContactUs";
 import CareerPage from "../Views/ExtraPages/CareerPage";
 import Blogs from "../Views/ExtraPages/Blogs";
 import AboutUs from "../Views/ExtraPages/AboutUs";
+import Services from "../Views/Services/Services";
 
 
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/about-us",
     element: <AboutUs />,
+  },
+  {
+    path: "/services",
+    element: <Services />,
   },
 
   

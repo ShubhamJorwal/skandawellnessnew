@@ -74,10 +74,10 @@ const CareerPage = () => {
             <Navbar />
             <div id="Careerpage">
                 <div className="Contactus-banner-slider">
-                    {/**/} <img id='homslx1ighsid' src="/assets/redrossesbunch.png" alt="" />
-                    <img id='homslx2ighsid' src="/assets/redrossesbunch.png" alt="" />
-                    <img id='homslx3ighsid' src="/assets/redrossesbunch.png" alt="" />
-                    <img id='homslx4ighsid' src="/assets/redrossesbunch.png" alt="" />
+                    {/**/} <img id='homslx1ighsid' src="/assets/redrossesbunch.webp" alt="" />
+                    <img id='homslx2ighsid' src="/assets/redrossesbunch.webp" alt="" />
+                    <img id='homslx3ighsid' src="/assets/redrossesbunch.webp" alt="" />
+                    <img id='homslx4ighsid' src="/assets/redrossesbunch.webp" alt="" />
                     <h1>Career</h1>
                     <h3>Explore Exciting Opportunities</h3>
                     <p>Discover rewarding career paths at Skanda Wellness. <br /> We're passionate about holistic well-being and seek dedicated individuals to join our team.</p>
@@ -88,7 +88,7 @@ const CareerPage = () => {
                         <p>Skanda Wellness</p>
                         <h1>Join Our<span>Team</span></h1>
                         <p>Explore opportunities to grow professionally in a nurturing environment that values your skills and contributions.</p>
-                        <img src="/assets/newlogoextralarge.png" alt="" id='imgcarlogskxs' />
+                        <img src="/assets/newlogoextralarge.webp" alt="" id='imgcarlogskxs' />
                         <form onSubmit={handleSubmit} className="career-form">
                                 <div className="con654s1x1">
                             <input
