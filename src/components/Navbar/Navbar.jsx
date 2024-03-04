@@ -71,7 +71,7 @@ const Navbar = () => {
                 <Link to={"/"}>Services</Link>
               </li>
               <li>
-                <Link to={"/"}>About Us</Link>
+                <Link to={"/about-us"}>About Us</Link>
               </li>
               <li>
                 <Link to={"/blogs"}>Blogs</Link>
@@ -87,12 +87,12 @@ const Navbar = () => {
             </li>
             </ul>
           </div>
-          <div id="navsec03sx">
+          {/* <div id="navsec03sx">
         
             <li>
               <Link to={"/"}>Book Appointment</Link>
             </li>
-          </div>
+          </div> */}
         </nav>
       </div>
       <div id="coverhideareofnavbar"></div>

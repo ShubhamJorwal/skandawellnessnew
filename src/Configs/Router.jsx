@@ -4,6 +4,7 @@ import Home from "../Views/Home/Home";
 import ContactUs from "../Views/ExtraPages/ContactUs";
 import CareerPage from "../Views/ExtraPages/CareerPage";
 import Blogs from "../Views/ExtraPages/Blogs";
+import AboutUs from "../Views/ExtraPages/AboutUs";
 
 
 
@@ -15,10 +16,6 @@ const router = createBrowserRouter([
     element: <Home />,
     errorElement: <Notfoundpage />,
   },
-  // {
-  //   path: "/about-us",
-  //   element: <About />,
-  // },
   {
     path: "/contact-us",
     element: <ContactUs />,
@@ -30,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/blogs",
     element: <Blogs />,
+  },
+  {
+    path: "/about-us",
+    element: <AboutUs />,
   },
 
   
